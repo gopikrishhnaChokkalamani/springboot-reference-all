@@ -1,0 +1,16 @@
+server:
+  port: 9192
+spring:
+  application:
+    name: springboot-kafka
+  kafka:
+    consumer:
+      bootstrap-servers: localhost:9092
+      group-id: group_id
+      auto-offset-reset: earliest
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.springframework.kafka.support.serializer.JsonSerializer
+    producer:
+      bootstrap-servers: localhost:9092
+#      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+#      value-deserializer: org.springframework.kafka.support.serializer.JsonSerializer
