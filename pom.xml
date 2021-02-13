@@ -22,6 +22,7 @@
         <module>springboot-eureka-server</module>
         <module>springboot-swagger-ui</module>
         <module>springboot-redis-cache-inmemory-db</module>
+        <module>springboot-redis-messaging</module>
     </modules>
 
     <properties>

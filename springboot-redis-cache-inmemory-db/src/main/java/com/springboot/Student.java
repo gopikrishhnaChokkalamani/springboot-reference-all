@@ -13,6 +13,8 @@ import java.io.Serializable;
 @RedisHash("Student")
 public class Student implements Serializable {
 
+  //redis hash - alternate to hashoperations where you would manually build the hash table for redis db operations
+
   private static final long serialVersionUID = 1L;
 
   private long id;

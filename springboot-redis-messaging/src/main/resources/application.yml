@@ -1,0 +1,10 @@
+server:
+  port: 9195
+
+spring:
+  application:
+    name: springboot-redis-messaging
+  redis:
+    port: 6379
+    password: konara
+    host: myredis

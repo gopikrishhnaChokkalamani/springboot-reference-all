@@ -22,7 +22,7 @@ public class RedisController {
   private StudentRepository studentRepository;
 
   @PostMapping
-  @CacheEvict(value="students")
+  @CacheEvict(value="students", beforeInvocation = true)
   public Student saveStudentInformation(@RequestBody Student student) {
     //studentService.save(student);
     return studentRepository.save(student);
