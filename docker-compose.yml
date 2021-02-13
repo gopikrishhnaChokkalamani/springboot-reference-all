@@ -17,3 +17,8 @@ services:
       KAFKA_ADVERTISED_HOST_NAME: 127.0.0.1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
       KAFKA_CREATE_TOPICS: "kafka-topic:1:3"
+  redis:
+    container_name: myredis
+    image: redis
+    ports:
+      - "6379:6379"

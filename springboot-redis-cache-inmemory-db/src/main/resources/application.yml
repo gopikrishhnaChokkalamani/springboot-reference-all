@@ -1,0 +1,10 @@
+server:
+  port: 9194
+spring:
+  application:
+    name: springboot-redis-cache-inmemory-db
+  redis:
+    port: 6379
+    password: konara
+    host: myredis
+    timeToLive: 60
