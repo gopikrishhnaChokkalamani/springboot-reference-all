@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-@ApiOperation(value = "/profile/v1/employee", tags = "Employee Profile Controller", notes = "Employee Profile API")
+//@ApiOperation(value = "/profile/v1/employee", tags = "Employee Profile Controller", notes = "Employee Profile API")
 @RestController
 @RequestMapping("/profile/v1/employee")
 public class EmployeeProfileController {

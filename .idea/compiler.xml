@@ -9,8 +9,9 @@
         <module name="springboot-cassandra" />
         <module name="springboot-eureka-server" />
         <module name="springboot-kafka" />
-        <module name="springboot-redis-cache-inmemory-db" />
         <module name="springboot-redis-messaging" />
+        <module name="springboot-redis-cache-inmemory-db" />
+        <module name="springboot-swagger-maven-codegen" />
         <module name="springboot-swagger-ui" />
       </profile>
     </annotationProcessing>
@@ -31,6 +32,7 @@
       <module name="springboot-kafka" options="-parameters" />
       <module name="springboot-redis-cache-inmemory-db" options="-parameters" />
       <module name="springboot-redis-messaging" options="-parameters" />
+      <module name="springboot-swagger-maven-codegen" options="-parameters" />
       <module name="springboot-swagger-ui" options="-parameters" />
     </option>
   </component>

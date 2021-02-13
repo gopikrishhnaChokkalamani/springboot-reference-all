@@ -1,0 +1,11 @@
+server:
+  port: 9196
+
+spring:
+  application:
+    name: springboot-swagger-maven-codegen
+
+employee:
+  profiles:
+    host:
+      uri: http://localhost:9193
