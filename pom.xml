@@ -20,6 +20,7 @@
         <module>springboot-cassandra</module>
         <module>springboot-kafka</module>
         <module>springboot-eureka-server</module>
+        <module>springboot-swagger-ui</module>
     </modules>
 
     <properties>
@@ -28,6 +29,7 @@
         <spring-cloud.version>2020.0.1</spring-cloud.version>
         <apache.commons.version>3.4</apache.commons.version>
         <springboot.admin-server.version>2.1.3</springboot.admin-server.version>
+        <springfox.swagger.version>2.9.2</springfox.swagger.version>
     </properties>
 
     <dependencyManagement>
@@ -58,6 +60,16 @@
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-client</artifactId>
                 <version>${springboot.admin-server.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${springfox.swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${springfox.swagger.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

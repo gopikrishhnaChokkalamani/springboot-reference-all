@@ -4,5 +4,6 @@
     <file url="file://$PROJECT_DIR$/springboot-cassandra/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-eureka-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-kafka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-swagger-ui/src/main/java" charset="UTF-8" />
   </component>
 </project>
