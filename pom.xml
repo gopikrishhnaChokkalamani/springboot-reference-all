@@ -24,6 +24,7 @@
         <module>springboot-redis-cache-inmemory-db</module>
         <module>springboot-redis-messaging</module>
         <module>springboot-swagger-maven-codegen</module>
+        <module>springboot-ehcache-cachemanager</module>
     </modules>
 
     <properties>
