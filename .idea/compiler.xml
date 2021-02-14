@@ -10,6 +10,7 @@
         <module name="springboot-eureka-server" />
         <module name="springboot-kafka" />
         <module name="springboot-ehcache-cachemanager" />
+        <module name="springboot-feign-client" />
         <module name="springboot-redis-messaging" />
         <module name="springboot-redis-cache-inmemory-db" />
         <module name="springboot-swagger-maven-codegen" />
@@ -31,6 +32,7 @@
       <module name="springboot-cassandra" options="-parameters" />
       <module name="springboot-ehcache-cachemanager" options="-parameters" />
       <module name="springboot-eureka-server" options="-parameters" />
+      <module name="springboot-feign-client" options="-parameters" />
       <module name="springboot-kafka" options="-parameters" />
       <module name="springboot-redis-cache-inmemory-db" options="-parameters" />
       <module name="springboot-redis-messaging" options="-parameters" />

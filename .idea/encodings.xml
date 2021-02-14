@@ -4,6 +4,8 @@
     <file url="file://$PROJECT_DIR$/springboot-cassandra/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-ehcache-cachemanager/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-eureka-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-feign-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-feign-client/target/generated-sources/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-kafka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis-cache-inmemory-db/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis-messaging/src/main/java" charset="UTF-8" />

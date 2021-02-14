@@ -26,7 +26,7 @@ public class EmployeeProfileController {
 
   @ApiOperation(value = "Fetch All Employees")
   @ApiResponses(value = {
-          @ApiResponse(code = 200, message = "SUCCESS", response = Employee.class),
+          @ApiResponse(code = 200, message = "SUCCESS", response = Employee.class, responseContainer = "List"),
           @ApiResponse(code = 401, message = "UNAUTHORIZED!", response = ErrorResponse.class),
           @ApiResponse(code = 403, message = "FORBIDDEN!", response = ErrorResponse.class),
           @ApiResponse(code = 404, message = "NOT FOUND")
