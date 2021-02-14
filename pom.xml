@@ -26,6 +26,7 @@
         <module>springboot-swagger-maven-codegen</module>
         <module>springboot-ehcache-cachemanager</module>
         <module>springboot-feign-client</module>
+        <module>springboot-retry</module>
     </modules>
 
     <properties>
