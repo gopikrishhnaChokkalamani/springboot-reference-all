@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/springboot-async/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-cassandra/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-ehcache-cachemanager/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-eureka-server/src/main/java" charset="UTF-8" />
@@ -10,6 +11,7 @@
     <file url="file://$PROJECT_DIR$/springboot-redis-cache-inmemory-db/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis-messaging/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-retry/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-soap-producer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-swagger-maven-codegen/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-swagger-maven-codegen/target/generated-sources/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-swagger-ui/src/main/java" charset="UTF-8" />

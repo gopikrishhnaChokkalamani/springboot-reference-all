@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/primary-source/pom.xml" />
         <option value="$PROJECT_DIR$/projects/pom.xml" />
         <option value="$PROJECT_DIR$/servlets/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-soap-webservice/pom.xml" />
       </set>
     </option>
   </component>

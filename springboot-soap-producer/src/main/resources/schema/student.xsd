@@ -1,0 +1,36 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.localsoapproducer.com/xml/school"
+           targetNamespace="http://www.localsoapproducer.com/xml/school" elementFormDefault="qualified">
+
+    <xs:element name="StudentRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="StudentResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="student" type="tns:student"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="student">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="id" type="xs:int"/>
+            <xs:element name="school" type="xs:string"/>
+            <xs:element name="major" type="tns:major"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="major">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="MATHS"/>
+            <xs:enumeration value="CHEMISTRY"/>
+            <xs:enumeration value="PHYSICS"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

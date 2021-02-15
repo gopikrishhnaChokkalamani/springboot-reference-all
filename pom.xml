@@ -27,6 +27,8 @@
         <module>springboot-ehcache-cachemanager</module>
         <module>springboot-feign-client</module>
         <module>springboot-retry</module>
+        <module>springboot-async</module>
+        <module>springboot-soap-producer</module>
     </modules>
 
     <properties>

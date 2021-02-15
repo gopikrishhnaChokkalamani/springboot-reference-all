@@ -13,6 +13,8 @@
         <module name="springboot-feign-client" />
         <module name="springboot-redis-messaging" />
         <module name="springboot-retry" />
+        <module name="springboot-soap-producer" />
+        <module name="springboot-async" />
         <module name="springboot-redis-cache-inmemory-db" />
         <module name="springboot-swagger-maven-codegen" />
         <module name="springboot-swagger-ui" />
@@ -30,6 +32,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot-async" options="-parameters" />
       <module name="springboot-cassandra" options="-parameters" />
       <module name="springboot-ehcache-cachemanager" options="-parameters" />
       <module name="springboot-eureka-server" options="-parameters" />
@@ -38,6 +41,7 @@
       <module name="springboot-redis-cache-inmemory-db" options="-parameters" />
       <module name="springboot-redis-messaging" options="-parameters" />
       <module name="springboot-retry" options="-parameters" />
+      <module name="springboot-soap-producer" options="-parameters" />
       <module name="springboot-swagger-maven-codegen" options="-parameters" />
       <module name="springboot-swagger-ui" options="-parameters" />
     </option>

@@ -1,0 +1,9 @@
+server:
+  port:9200
+
+spring:
+  application:
+    name: springboot-async
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
