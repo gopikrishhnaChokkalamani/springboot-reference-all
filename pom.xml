@@ -29,6 +29,7 @@
         <module>springboot-retry</module>
         <module>springboot-async</module>
         <module>springboot-soap-producer</module>
+        <module>springboot-soap-consumer</module>
     </modules>
 
     <properties>

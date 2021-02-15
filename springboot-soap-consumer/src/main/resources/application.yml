@@ -1,0 +1,11 @@
+server:
+  port: 9202
+
+spring:
+  application:
+    name: springboot-soap-consumer
+
+student:
+  service:
+    host:
+      uri: http://localhost:9201/service/student-details

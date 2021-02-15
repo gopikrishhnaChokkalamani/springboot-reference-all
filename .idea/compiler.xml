@@ -8,12 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-cassandra" />
         <module name="springboot-eureka-server" />
+        <module name="springboot-soap-consumer" />
         <module name="springboot-kafka" />
-        <module name="springboot-ehcache-cachemanager" />
         <module name="springboot-feign-client" />
-        <module name="springboot-redis-messaging" />
         <module name="springboot-retry" />
         <module name="springboot-soap-producer" />
+        <module name="springboot-ehcache-cachemanager" />
+        <module name="springboot-redis-messaging" />
         <module name="springboot-async" />
         <module name="springboot-redis-cache-inmemory-db" />
         <module name="springboot-swagger-maven-codegen" />
@@ -41,6 +42,7 @@
       <module name="springboot-redis-cache-inmemory-db" options="-parameters" />
       <module name="springboot-redis-messaging" options="-parameters" />
       <module name="springboot-retry" options="-parameters" />
+      <module name="springboot-soap-consumer" options="-parameters" />
       <module name="springboot-soap-producer" options="-parameters" />
       <module name="springboot-swagger-maven-codegen" options="-parameters" />
       <module name="springboot-swagger-ui" options="-parameters" />
