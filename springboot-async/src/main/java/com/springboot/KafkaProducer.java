@@ -25,6 +25,7 @@ public class KafkaProducer {
   @Autowired
   private KafkaTemplate kafkaTemplate;
 
+  @Async
   public void send(Student student) throws ExecutionException, InterruptedException {
     Message<Student> message = MessageBuilder.withPayload(student).setHeader(KafkaHeaders.TOPIC, STUDENT_TOPIC)
             .setHeader("custom-header-student", STUDENT_TOPIC).build();
@@ -44,7 +45,12 @@ public class KafkaProducer {
     }
   }
 
-  @Async("threadPoolTaskExecutor")
+  //using both @Async and CompletableFuture.runAsync() is not correct
+  //CompletableFuture.runAsync{ new Runnable ()...} will spawn new thread out of your threadPoolTaskExecutor -> this is wrong;
+//  Your application is managed by the container. Since it's discouraged to spawn Threads on you own (CompletableFuture.runAsync()),
+//  you can let the container inject a managed Executor.
+
+  //@Async("threadPoolTaskExecutor")
   public void sendMessage(Student student) {
     CompletableFuture.runAsync(() -> {
       try {
