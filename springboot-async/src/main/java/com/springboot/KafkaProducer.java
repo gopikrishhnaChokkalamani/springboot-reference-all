@@ -50,6 +50,9 @@ public class KafkaProducer {
 //  Your application is managed by the container. Since it's discouraged to spawn Threads on you own (CompletableFuture.runAsync()),
 //  you can let the container inject a managed Executor.
 
+  //but you can do make the method return CompletableFuture<Student> and annotation @Async
+  //and do return CompletableFuture.completedFuture(...);
+
   //@Async("threadPoolTaskExecutor")
   public void sendMessage(Student student) {
     CompletableFuture.runAsync(() -> {
