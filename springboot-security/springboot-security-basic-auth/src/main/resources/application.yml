@@ -11,3 +11,7 @@ basic:
       user-name: user
       password: $2a$04$dSIz4rdSaWWYZ9nooLXEKewSUY3yM5UGMaQN2c6ZjEqwXund0pa1m
       role: USER
+
+#the above password is password, it has be created using BcryptPasswordEncoder
+#write a simple program create a Bcryptpasswordencoder object and pass the actual password text to encode
+#u will see the above hashed text, get that and use it here
