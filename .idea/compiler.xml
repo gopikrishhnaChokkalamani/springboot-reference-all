@@ -12,6 +12,7 @@
         <module name="springboot-soap-consumer" />
         <module name="springboot-kafka" />
         <module name="springboot-feign-client" />
+        <module name="springboot-spring-integration" />
         <module name="springboot-security-basic-auth" />
         <module name="springboot-retry" />
         <module name="springboot-jwt" />
