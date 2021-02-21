@@ -16,6 +16,8 @@
         <option value="$PROJECT_DIR$/servlets/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-jwt/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-soap-webservice/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-spring-integration/springboot-spring-integration-service-actuator/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-spring-integration/springboot-spring-integration-transformer/pom.xml" />
       </set>
     </option>
   </component>

@@ -16,8 +16,6 @@
         <module name="springboot-retry" />
         <module name="springboot-jwt" />
         <module name="springboot-soap-producer" />
-        <module name="springboot-spring-integration-transformer" />
-        <module name="springboot-spring-integration-service-actuator" />
         <module name="springboot-ehcache-cachemanager" />
         <module name="springboot-security-jwt" />
         <module name="springboot-redis-messaging" />
@@ -36,6 +34,8 @@
       <module name="projects" target="1.5" />
       <module name="servlet" target="1.5" />
       <module name="servlets" target="1.5" />
+      <module name="springboot-spring-integration-service-actuator" target="8" />
+      <module name="springboot-spring-integration-transformer" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

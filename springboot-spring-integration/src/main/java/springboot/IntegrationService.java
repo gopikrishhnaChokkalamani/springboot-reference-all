@@ -1,4 +1,4 @@
-package com.springboot;
+package springboot;
 
 import org.springframework.integration.annotation.ServiceActivator;
 import org.springframework.messaging.Message;

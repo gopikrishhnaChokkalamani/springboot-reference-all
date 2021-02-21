@@ -1,6 +1,0 @@
-server:
-  port: 9208
-
-spring:
-  application:
-    name: springboot-spring-integration-service-actuator

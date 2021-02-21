@@ -1,6 +1,0 @@
-server:
-  port: 9207
-
-spring:
-  application:
-    name: springboot-spring-integration-transformer
