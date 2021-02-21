@@ -19,6 +19,7 @@
         <module name="springboot-ehcache-cachemanager" />
         <module name="springboot-security-jwt" />
         <module name="springboot-redis-messaging" />
+        <module name="springboot-security-oauth2" />
         <module name="springboot-async" />
         <module name="springboot-redis-cache-inmemory-db" />
         <module name="springboot-swagger-maven-codegen" />
@@ -50,6 +51,7 @@
       <module name="springboot-security" options="-parameters" />
       <module name="springboot-security-basic-auth" options="-parameters" />
       <module name="springboot-security-jwt" options="-parameters" />
+      <module name="springboot-security-oauth2" options="-parameters" />
       <module name="springboot-soap-consumer" options="-parameters" />
       <module name="springboot-soap-producer" options="-parameters" />
       <module name="springboot-swagger-maven-codegen" options="-parameters" />
