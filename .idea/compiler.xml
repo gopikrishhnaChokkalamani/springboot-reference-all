@@ -16,6 +16,8 @@
         <module name="springboot-retry" />
         <module name="springboot-jwt" />
         <module name="springboot-soap-producer" />
+        <module name="springboot-spring-integration-transformer" />
+        <module name="springboot-spring-integration-service-actuator" />
         <module name="springboot-ehcache-cachemanager" />
         <module name="springboot-security-jwt" />
         <module name="springboot-redis-messaging" />
@@ -54,6 +56,9 @@
       <module name="springboot-security-oauth2" options="-parameters" />
       <module name="springboot-soap-consumer" options="-parameters" />
       <module name="springboot-soap-producer" options="-parameters" />
+      <module name="springboot-spring-integration" options="-parameters" />
+      <module name="springboot-spring-integration-service-actuator" options="-parameters" />
+      <module name="springboot-spring-integration-transformer" options="-parameters" />
       <module name="springboot-swagger-maven-codegen" options="-parameters" />
       <module name="springboot-swagger-ui" options="-parameters" />
     </option>

@@ -31,6 +31,7 @@
         <module>springboot-soap-producer</module>
         <module>springboot-soap-consumer</module>
         <module>springboot-security</module>
+        <module>springboot-spring-integration</module>
     </modules>
 
     <properties>
