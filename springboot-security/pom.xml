@@ -14,6 +14,7 @@
     <modules>
         <module>springboot-security-basic-auth</module>
         <module>springboot-jwt</module>
+        <module>springboot-security-jwt</module>
     </modules>
 
     <dependencies>

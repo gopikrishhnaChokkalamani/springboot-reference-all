@@ -1,0 +1,6 @@
+server:
+  port: 9205
+
+spring:
+  application:
+    name: springboot-security-jwt
