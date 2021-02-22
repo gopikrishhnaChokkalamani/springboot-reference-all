@@ -20,3 +20,11 @@ management:
     health:
       enabled: true
 
+logging:
+  level:
+    root: ERROR
+#if you want a specific package to run on a different level
+    com.springboot: TRACE
+#this is also possible - check the loggers actuator endpoint to understand better
+#    com.springboot.ActuatorController
+
