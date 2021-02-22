@@ -19,4 +19,14 @@ public class AppAsyncConfig {
     executor.setThreadNamePrefix("Async-");
     return executor;
   }
+
+  @Bean("threadPoolTaskExecutorAnother")
+  public TaskExecutor getAsyncExecutorAnother() {
+    ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
+    executor.setCorePoolSize(10);
+    executor.setMaxPoolSize(1000);
+    executor.setWaitForTasksToCompleteOnShutdown(true);
+    executor.setThreadNamePrefix("Async-another-");
+    return executor;
+  }
 }

@@ -15,6 +15,7 @@ public class BasicAuthController {
   //soeone can auth at global level, but if they dont have the role, then this will fail
   @PreAuthorize("hasRole('USER')") // supports spring expression language
   //@Secured() //does not support expression language pass a method itself
+  // @Secured({ "ROLE_ADMIN" })
   public String fetch() {
     return "Successfull Authenticated!";
   }

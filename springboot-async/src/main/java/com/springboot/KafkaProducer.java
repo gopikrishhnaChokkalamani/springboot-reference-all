@@ -25,7 +25,10 @@ public class KafkaProducer {
   @Autowired
   private KafkaTemplate kafkaTemplate;
 
-  @Async
+  //if there is only one threadPoolTaskExecutor in config, @Async will auto recognize
+  //if you have multiple then it will create a default executor and run this method
+  //so always better to give the threadpool qualifier name in the @async
+  @Async("threadPoolTaskExecutorAnother")
   public void send(Student student) throws ExecutionException, InterruptedException {
     Message<Student> message = MessageBuilder.withPayload(student).setHeader(KafkaHeaders.TOPIC, STUDENT_TOPIC)
             .setHeader("custom-header-student", STUDENT_TOPIC).build();

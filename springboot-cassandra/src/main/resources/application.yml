@@ -6,6 +6,11 @@ spring:
   data:
     cassandra:
       port: 9042
+#give cluster name instead of contact points
+#      cluster-name: TESTCLUSTER
       contact-points: localhost
       local-datacenter: datacenter1
       keyspace-name: mykeyspace
+      consistency-level: local_quorum
+      read-timeout: 30s
+      connect-timeout: 1m

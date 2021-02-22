@@ -44,3 +44,8 @@ public class BasicSecurityConfig extends WebSecurityConfigurerAdapter {
             .authenticationEntryPoint(basicAuthEntryPoint);
   }
 }
+
+//csrf - u need login and then u trick the user to click on some other link - authentication is needed
+//xss - cross site scripting - u inject some js code in the browser console and completely alter the behaviour of the app
+//sql injection - if u have used ? in jdbctemplate, and ur web application is taking some data, u inject 1=1 it will return
+//all data from the database

@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class RedisReciever implements MessageListener {
 
+  //note no topic based listener like kafka, default message listener
+  //so its monotonous, care should be taken scenario to use this
   @Override
   public void onMessage(Message message, byte[] pattern) {
     // TODO Auto-generated method stub

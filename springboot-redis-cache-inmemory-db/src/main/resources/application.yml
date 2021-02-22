@@ -3,6 +3,8 @@ server:
 spring:
   application:
     name: springboot-redis-cache-inmemory-db
+  cache:
+    type: redis
   redis:
     port: 6379
     password: konara

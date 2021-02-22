@@ -24,6 +24,15 @@ public class EmployeeProfileController {
           new Employee(42345L, "Mark", "Mechanical", 53023456788L)
   );
 
+
+  //look at this file
+  //due to swagger annotation it looks very ugly
+  //so wwat we can do is
+  //create this contraoller as an interface and have all the swagger annotation and signature here
+  //then create an implementation and implemen this controller
+  //that way, ur controller will be a documentation
+  //ur imple will be the actuall logic
+
   @ApiOperation(value = "Fetch All Employees")
   @ApiResponses(value = {
           @ApiResponse(code = 200, message = "SUCCESS", response = Employee.class, responseContainer = "List"),

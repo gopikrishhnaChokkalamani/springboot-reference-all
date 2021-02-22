@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
+//if using in the cloud services - the name is the application-name that you see in the eureka server
+//here its a standalone that integrates with the maven codegen
 @FeignClient(name = "springboot-swagger-codegen-client", qualifier = "springboot-swagger-codegen-client",
 url = "${employee.profiles.host.uri}", configuration = FeignConfig.class)
 public interface EmployeeProfileFeignClient {

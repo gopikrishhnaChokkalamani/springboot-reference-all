@@ -39,7 +39,8 @@ public class RedisConfig {
     RedisMessageListenerContainer container = new RedisMessageListenerContainer();
     container.setConnectionFactory(connectionFactory());
     container.addMessageListener(new MessageListenerAdapter(new RedisReciever()), topic());
-    container.setTaskExecutor(Executors.newFixedThreadPool(4));
+    container.setTaskExecutor(Executors.newFixedThreadPool(4)); //even though redis queue is single threaded
+    //it is super fast, here we are making the container to execute with multiple threads to listen and process
     return container;
   }
 

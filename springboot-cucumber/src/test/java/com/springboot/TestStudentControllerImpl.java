@@ -7,6 +7,8 @@ import static org.mockito.Mockito.when;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -14,6 +16,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 //@RunWith(SpringJUnit4ClassRunner.class)
 //@ContextConfiguration(classes = {TestStudentControllerConfiguration.class})
 public class TestStudentControllerImpl {
+
+  //@InjectMocks the actual file been worked on in this case StudentController
+
+ // @Mock if there are any uatowired compoents - like a service or respository
 
 //  @Autowired
 //  private StudentController studentController;

@@ -16,7 +16,14 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Product {
-  
+
+  //you can move these two primary keys to another call and add it as reference variable
+  //just add @PrimaryKey here and @PrimaryKeyClass on that class
+
+  //primary key type is important for cassandra to determine the parition key
+  //here in this case, the partition key will be the id in the column datamodel inside the node
+  //if you change both to CLUSTERED, then that parition key will be geenrated as
+  //a clustered key of both id and name
   @PrimaryKeyColumn(name = "id", ordinal = 0, type = PrimaryKeyType.PARTITIONED)
   private int id;
   

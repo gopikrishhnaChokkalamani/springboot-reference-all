@@ -21,7 +21,12 @@ public class AppController {
   @GetMapping("/initial")
   public String initial(@RequestParam("name") String name) throws ExecutionException, InterruptedException {
     //Future<String> f = integrationGateway.sendMessage(name);
+    //when you do f.get() it blocks the main thread
+    //u can add timeout but still its not complete async
     CompletableFuture<String> cf = CompletableFuture.supplyAsync(() -> integrationGateway.sendMessage(name));
+    //cf.get() will block the main thread
+    //but cf.getNow(default value) will not wait, it will return response immed
+    //will be very useful in event driven architecture
     return cf.getNow("processing");
   }
 

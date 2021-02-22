@@ -14,6 +14,10 @@ public class RedisConfig {
     return new JedisConnectionFactory();
   }
 
+  //outdated, ebfore we used to use this to save data to redis db, there we used to use hashmap to create data
+  //and then use redistemplate to save the data
+  //with the intro of @RedisHash - it has changed, u can directly use the respository to insert read data
+  //redis template is only needed in the messaging context
   @Bean
   public RedisTemplate<String, Object> redisTemplate() {
     final RedisTemplate<String, Object> template = new RedisTemplate<String, Object>();
