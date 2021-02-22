@@ -27,4 +27,3 @@ logging:
     com.springboot: TRACE
 #this is also possible - check the loggers actuator endpoint to understand better
 #    com.springboot.ActuatorController
-
