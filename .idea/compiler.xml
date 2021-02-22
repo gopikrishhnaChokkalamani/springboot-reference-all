@@ -20,6 +20,7 @@
         <module name="springboot-ehcache-cachemanager" />
         <module name="springboot-security-jwt" />
         <module name="springboot-redis-messaging" />
+        <module name="springboot-cucumber" />
         <module name="springboot-security-oauth2" />
         <module name="springboot-async" />
         <module name="springboot-redis-cache-inmemory-db" />
@@ -43,6 +44,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="springboot-async" options="-parameters" />
       <module name="springboot-cassandra" options="-parameters" />
+      <module name="springboot-cucumber" options="-parameters" />
       <module name="springboot-ehcache-cachemanager" options="-parameters" />
       <module name="springboot-eureka-server" options="-parameters" />
       <module name="springboot-feign-client" options="-parameters" />

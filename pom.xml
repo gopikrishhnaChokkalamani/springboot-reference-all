@@ -32,6 +32,7 @@
         <module>springboot-soap-consumer</module>
         <module>springboot-security</module>
         <module>springboot-spring-integration</module>
+        <module>springboot-cucumber</module>
     </modules>
 
     <properties>
