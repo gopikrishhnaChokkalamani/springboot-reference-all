@@ -33,6 +33,7 @@
         <module>springboot-security</module>
         <module>springboot-spring-integration</module>
         <module>springboot-cucumber</module>
+        <module>springboot-actuator</module>
     </modules>
 
     <properties>

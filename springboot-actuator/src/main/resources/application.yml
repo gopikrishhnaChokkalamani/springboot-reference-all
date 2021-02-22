@@ -1,0 +1,22 @@
+server:
+  port: 9208
+
+spring:
+  application:
+    name: springboot-actuator
+
+#if you want to have a customized uri, instead of the default /actuator
+management:
+  endpoints:
+    web:
+      base-path: /myapp/actuator
+#expose all endpoints
+      exposure:
+        include: "*"
+#enable endpoints by comma seperation
+#       include: health, beans, env
+#if you want a specific endpoint to be enabled
+  endpoint:
+    health:
+      enabled: true
+
