@@ -19,4 +19,16 @@ public class IntegrationService {
     System.out.println("processed Message");
     reply.send(newMessage);
   }
+
+  @ServiceActivator(inputChannel = "integration.after.transform.channel")
+  public void transform(Message<?> message) {
+    MessageChannel reply = (MessageChannel) message.getHeaders().getReplyChannel();
+    MessageBuilder.fromMessage(message);
+    //Student payload = (Student) message.getPayload();
+//    Message<String> newMessage = MessageBuilder
+//            .withPayload(.toString()).build();
+    //Thread.sleep(3000);
+    System.out.println("transformed Object to Json string and returning");
+    reply.send(message);
+  }
 }

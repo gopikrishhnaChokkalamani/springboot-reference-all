@@ -4,3 +4,7 @@ server:
 spring:
   application:
     name: springboot-spring-integration
+  redis:
+    port: 6379
+    password: konara
+    host: myredis
