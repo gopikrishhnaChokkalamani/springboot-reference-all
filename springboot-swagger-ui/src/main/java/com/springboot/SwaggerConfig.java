@@ -2,6 +2,7 @@ package com.springboot;
 
 import com.google.common.base.Predicates;
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -21,6 +22,7 @@ import java.util.List;
 
 @Configuration
 @EnableSwagger2
+@ConditionalOnProperty(value = "myapp.swagger.api.enabled", havingValue = "true")
 public class SwaggerConfig {
 
   // to access http://localhost:9193/swagger-ui.html

@@ -34,6 +34,7 @@
         <module>springboot-spring-integration</module>
         <module>springboot-cucumber</module>
         <module>springboot-actuator</module>
+        <module>springboot-config-server</module>
     </modules>
 
     <properties>

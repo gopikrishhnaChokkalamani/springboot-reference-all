@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/springboot-actuator/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-async/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-cassandra/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-config-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-cucumber/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-ehcache-cachemanager/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-eureka-server/src/main/java" charset="UTF-8" />

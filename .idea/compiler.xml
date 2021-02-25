@@ -18,6 +18,7 @@
         <module name="springboot-jwt" />
         <module name="springboot-soap-producer" />
         <module name="springboot-actuator" />
+        <module name="springboot-config-server" />
         <module name="springboot-ehcache-cachemanager" />
         <module name="springboot-security-jwt" />
         <module name="springboot-redis-messaging" />
@@ -46,6 +47,7 @@
       <module name="springboot-actuator" options="-parameters" />
       <module name="springboot-async" options="-parameters" />
       <module name="springboot-cassandra" options="-parameters" />
+      <module name="springboot-config-server" options="-parameters" />
       <module name="springboot-cucumber" options="-parameters" />
       <module name="springboot-ehcache-cachemanager" options="-parameters" />
       <module name="springboot-eureka-server" options="-parameters" />
