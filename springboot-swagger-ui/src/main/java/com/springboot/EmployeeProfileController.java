@@ -34,48 +34,49 @@ public class EmployeeProfileController {
   //ur imple will be the actuall logic
 
   @ApiOperation(value = "Fetch All Employees")
-  @ApiResponses(value = {
-          @ApiResponse(code = 200, message = "SUCCESS", response = Employee.class, responseContainer = "List"),
-          @ApiResponse(code = 401, message = "UNAUTHORIZED!", response = ErrorResponse.class),
-          @ApiResponse(code = 403, message = "FORBIDDEN!", response = ErrorResponse.class),
-          @ApiResponse(code = 404, message = "NOT FOUND")
-  })
+  @DefaultApiResponses
   @GetMapping(value = "/fetch/all")
   public List<Employee> fetchAllEmployees() {
     return employees;
   }
 
   @ApiOperation(value = "Fetch Employee by Name", response = Employee.class)
+  @DefaultApiResponses
   @GetMapping(value = "/fetch/{name}", produces = MediaType.APPLICATION_JSON_VALUE)
   public Employee fetchEmployeeByName(@ApiParam(value = "Employee Name") @PathVariable(value = "name") String name) {
     return employees.stream().filter(x -> x.getName().equalsIgnoreCase(name)).findFirst().get();
   }
 
   @ApiOperation(value = "Get Employee By Department", response = Employee.class)
+  @DefaultApiResponses
   @GetMapping(value = "/fetch/{department}")
   public List<Employee> fetchEmployeeByDepartment(@ApiParam(value = "Department Name", required = true) @PathVariable(value = "department") String department) {
     return employees.stream().filter(x -> x.getDepartment().equalsIgnoreCase(department)).collect(Collectors.toList());
   }
 
   @ApiOperation(value = "Insert Employee Record", response = Employee.class)
+  @DefaultApiResponses
   @PostMapping
   public Employee insertEmployee(@ApiParam(value = "Employee") @RequestBody Employee employee) {
     return employee;
   }
 
   @ApiOperation(value = "Update Employee Details", response = Employee.class)
+  @DefaultApiResponses
   @PutMapping
   public Employee updateEmployee(@ApiParam(value = "Employee") @RequestBody Employee employee) {
     return employee;
   }
 
   @ApiOperation(value = "Delete an Employee", response = Employee.class)
+  @DefaultApiResponses
   @DeleteMapping
   public Employee deleteEmployee(@ApiParam(value = "Employee") @RequestBody Employee employee) {
     return employee;
   }
 
   @ApiOperation(value = "Partial Update a specific Student in the System ", response = Employee.class)
+  @DefaultApiResponses
   @PatchMapping
   public Object patchEmployee(@ApiParam(value = "Employee") @RequestBody Map<String, Object> partialUpdate) {
     return partialUpdate;
