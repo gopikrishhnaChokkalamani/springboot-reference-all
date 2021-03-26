@@ -4,12 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.cassandra.core.cql.PrimaryKeyType;
+import org.springframework.data.cassandra.core.mapping.CassandraType;
 import org.springframework.data.cassandra.core.mapping.Column;
 import org.springframework.data.cassandra.core.mapping.Frozen;
 import org.springframework.data.cassandra.core.mapping.PrimaryKeyColumn;
 import org.springframework.data.cassandra.core.mapping.Table;
 
 import java.util.Date;
+import java.util.List;
 
 @Table
 @Data
@@ -33,7 +35,10 @@ public class Product {
   @Column(value = "created_time")
   private Date createdTime = new Date();
   
-  @Frozen
-  //@CassandraType(type = CassandraType.Name.TEXT, userTypeName = "category")
+  @Frozen  // if defined then it cannot be updated, you have reinsert all data
   private Category category;
+
+  // this is to infrom how this user defined type should be interpreted, list or map or set or udt time or text
+//  @CassandraType(type = CassandraType.Name.LIST, userTypeName = "category")
+//  List<Category> categories;
 }
