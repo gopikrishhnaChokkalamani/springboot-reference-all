@@ -14,3 +14,40 @@ spring:
       consistency-level: local_quorum
       read-timeout: 30s
       connect-timeout: 1m
+
+#DB schema schema queries
+#decribe keyspaces;
+#create keyspace mykeyspace with replication = {'class':'SimpleStrategy', 'replication_factor':1}
+#use mykeyspace;
+#create type category (name text, type text, price int);
+#describe type category;
+
+#remember data is stored in ascending order
+#u cannot alter table for clustering order, you need to drop and redo all
+#changing the clustering order will be good for reads but will take long time for writes
+#create table product(id int, name text, created_time timestamp, category frozen<category>, PRIMARY KEY ((id, name), created_time)) WITH CLUSTERING ORDER BY (created_time desc);
+#describe table product;
+#select * from product;
+
+#or
+#alter table product add category frozen<category>;
+
+#where claus
+# u need to always give the partition key in the where claus along with other conditions
+#without partition key where claus will not work and result in error
+#alternate way is using allow filtering after the where claus
+
+#quering on collections column
+#select * from product where vendors contains 'walmart' allow filtering;
+
+# POST/http://localhost:9191/cassandra
+#  {
+#    "id" : 4,
+#    "name" : "hyper tough screw driver",
+#    "category": {
+#      "name": "screw driver",
+#      "type" : "tools",
+#      "price" : 12
+#    }
+#  }
+

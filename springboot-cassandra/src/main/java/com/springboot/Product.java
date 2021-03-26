@@ -39,6 +39,7 @@ public class Product {
   private Category category;
 
   // this is to infrom how this user defined type should be interpreted, list or map or set or udt time or text
-//  @CassandraType(type = CassandraType.Name.LIST, userTypeName = "category")
-//  List<Category> categories;
+  //@CassandraType(type = CassandraType.Name.LIST, userTypeName = "category")
+
+  List<String> vendors;
 }
