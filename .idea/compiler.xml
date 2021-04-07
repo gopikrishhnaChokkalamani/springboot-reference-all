@@ -22,6 +22,7 @@
         <module name="springboot-ehcache-cachemanager" />
         <module name="springboot-security-jwt" />
         <module name="springboot-redis-messaging" />
+        <module name="springboot-spring-life-cycle" />
         <module name="springboot-cucumber" />
         <module name="springboot-security-oauth2" />
         <module name="springboot-async" />
@@ -66,6 +67,7 @@
       <module name="springboot-spring-integration" options="-parameters" />
       <module name="springboot-spring-integration-service-actuator" options="-parameters" />
       <module name="springboot-spring-integration-transformer" options="-parameters" />
+      <module name="springboot-spring-life-cycle" options="-parameters" />
       <module name="springboot-swagger-maven-codegen" options="-parameters" />
       <module name="springboot-swagger-ui" options="-parameters" />
     </option>

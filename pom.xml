@@ -35,6 +35,7 @@
         <module>springboot-cucumber</module>
         <module>springboot-actuator</module>
         <module>springboot-config-server</module>
+        <module>springboot-spring-life-cycle</module>
     </modules>
 
     <properties>
