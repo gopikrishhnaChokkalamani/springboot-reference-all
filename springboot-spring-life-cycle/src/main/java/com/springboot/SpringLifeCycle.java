@@ -24,6 +24,7 @@ import org.springframework.jmx.export.notification.NotificationPublisherAware;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
+//Check configuration for init-method and destroy-method
 @Slf4j
 public class SpringLifeCycle implements InitializingBean, DisposableBean, BeanNameAware, BeanClassLoaderAware,
         BeanFactoryAware, MessageSourceAware, NotificationPublisherAware, ApplicationContextAware, ResourceLoaderAware,
