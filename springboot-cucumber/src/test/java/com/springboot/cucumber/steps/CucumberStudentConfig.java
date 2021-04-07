@@ -6,8 +6,6 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.xml.ws.Response;
-
 @RunWith(SpringRunner.class)
 public class CucumberStudentConfig {
 

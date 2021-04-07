@@ -48,8 +48,10 @@ public class StudentCucumberTest extends CucumberStudentConfig {
   }
 
   private static final String STUDENT_API_URL = "/student";
+
   private final InputStream validInput = this.getClass().getClassLoader()
           .getResourceAsStream("valid-student-request.json");
+
   private final String validJson = new Scanner(validInput, "UTF-8").useDelimiter("\\Z").next();
 
   private RestTemplate restTemplate = new RestTemplate();
@@ -60,12 +62,7 @@ public class StudentCucumberTest extends CucumberStudentConfig {
 
 
   @Given("^request body contains$")
-  public void buildStudentObject() throws JsonProcessingException {
-    //delete(getURI(STUDENT_API_URL));
-   // ObjectMapper objectMapper = new ObjectMapper();
-   // JsonNode jsonNode = objectMapper.readValue(validJson, JsonNode.class);
-   // System.out.println(jsonNode);
-   // inputString = jsonNode.get(0).toString();
+  public void buildStudentObject() {
     System.out.println("Inside Given");
   }
 

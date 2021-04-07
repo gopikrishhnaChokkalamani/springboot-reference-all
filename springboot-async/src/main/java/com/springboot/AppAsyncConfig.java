@@ -13,8 +13,8 @@ public class AppAsyncConfig {
   @Bean("threadPoolTaskExecutor")
   public TaskExecutor getAsyncExecutor() {
     ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
-    executor.setCorePoolSize(20);
-    executor.setMaxPoolSize(1000);
+    executor.setCorePoolSize(20); // number of threads to keep in the pool all times
+    executor.setMaxPoolSize(1000); // maximum number of threads
     executor.setWaitForTasksToCompleteOnShutdown(true);
     executor.setThreadNamePrefix("Async-");
     return executor;
