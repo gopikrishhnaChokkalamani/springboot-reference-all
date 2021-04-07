@@ -18,12 +18,14 @@
         <module name="springboot-jwt" />
         <module name="springboot-soap-producer" />
         <module name="springboot-actuator" />
+        <module name="springboot-hystrix-client-app" />
         <module name="springboot-config-server" />
         <module name="springboot-ehcache-cachemanager" />
         <module name="springboot-security-jwt" />
         <module name="springboot-redis-messaging" />
         <module name="springboot-spring-life-cycle" />
         <module name="springboot-cucumber" />
+        <module name="springboot-hystrix-service-app" />
         <module name="springboot-security-oauth2" />
         <module name="springboot-async" />
         <module name="springboot-redis-cache-inmemory-db" />
@@ -53,6 +55,9 @@
       <module name="springboot-ehcache-cachemanager" options="-parameters" />
       <module name="springboot-eureka-server" options="-parameters" />
       <module name="springboot-feign-client" options="-parameters" />
+      <module name="springboot-hystrix" options="-parameters" />
+      <module name="springboot-hystrix-client-app" options="-parameters" />
+      <module name="springboot-hystrix-service-app" options="-parameters" />
       <module name="springboot-jwt" options="-parameters" />
       <module name="springboot-kafka" options="-parameters" />
       <module name="springboot-redis-cache-inmemory-db" options="-parameters" />

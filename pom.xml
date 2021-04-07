@@ -36,6 +36,7 @@
         <module>springboot-actuator</module>
         <module>springboot-config-server</module>
         <module>springboot-spring-life-cycle</module>
+        <module>springboot-hystrix</module>
     </modules>
 
     <properties>
