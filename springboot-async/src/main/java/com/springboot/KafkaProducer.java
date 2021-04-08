@@ -25,6 +25,13 @@ public class KafkaProducer {
   @Autowired
   private KafkaTemplate kafkaTemplate;
 
+  //Async will not work
+  //if the class is not a spring bean
+  // if the method is private
+  // dont have the caller and the async method in the same class
+  //caller will bypass theproy and will call the method directly
+  //no thread will be spawned in this case
+
   //if there is only one threadPoolTaskExecutor in config, @Async will auto recognize
   //if you have multiple then it will create a default executor and run this method
   //so always better to give the threadpool qualifier name in the @async
